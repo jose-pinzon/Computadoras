@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AltaPc">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Id:" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:text="Marca:" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:text="Modelo:" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:text="Precio:" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="230dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/monitores"
+        android:onClick="alta" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView4"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="84dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@drawable/buscar"
+        android:onClick="consulta" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="219dp"
+        android:layout_height="231dp"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/eliminar"
+        android:onClick="baja" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="144dp"
+        android:layout_height="301dp"
+        android:layout_alignBaseline="@id/button3"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignEnd="@id/button2"
+        android:layout_alignBottom="@id/button2"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="-257dp"
+        android:background="@drawable/editar"
+        android:onClick="modificacion" />
+
+
+</RelativeLayout>
